@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RockPaperScissors</string>
+    <string name="paper">PAPER</string>
+    <string name="scissors">SCISSORS</string>
+    <string name="rock">ROCK</string>
+    <string name="score">SCORE</string>
+    <string name="computer">Computer</string>
+    <string name="player">Player</string>
+    <string name="computerselect">Computer Select</string>
+    <string name="playerselect">U Select</string>
+    <string name="title_text">Rock Paper Scissors!</string>
+    <string name="play_button">Play</string>
+    <string name="get_ready">Get ready For</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
