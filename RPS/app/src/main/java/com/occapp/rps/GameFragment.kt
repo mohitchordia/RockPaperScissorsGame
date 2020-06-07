@@ -1,6 +1,7 @@
 package com.occapp.rps
 
 import android.os.Bundle
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +17,7 @@ class GameFragment: Fragment() {
     private lateinit var binding: GameFragmentBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        // Inflate the layout for this fragment
+
         binding = DataBindingUtil.inflate(
             inflater, R.layout.game_fragment, container, false)
 
@@ -43,7 +44,9 @@ class GameFragment: Fragment() {
                 increaseCompScore()
             }
         else if(i==j){
-                //Toast.makeText(activity,"Its a draw",Toast.LENGTH_SHORT).show()
+                var toast = Toast.makeText(activity,"Its a draw",Toast.LENGTH_SHORT)
+                toast.setGravity(Gravity.CENTER,0,0)
+                toast.show()
             }
         else{
                 increasePlayerScore()
@@ -55,14 +58,18 @@ class GameFragment: Fragment() {
         var num = str.toInt()
         num++
         binding.playerScore.setText(num.toString())
-        //Toast.makeText(activity,"You win",Toast.LENGTH_SHORT).show()
+        var toast = Toast.makeText(activity,"Player Wins",Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER,0,0)
+        toast.show()
     }
     private fun increaseCompScore() {
         var str = binding.computerScore.text.toString()
         var num = str.toInt()
         num++
         binding.computerScore.setText(num.toString())
-        //Toast.makeText(activity,"Computer Wins",Toast.LENGTH_SHORT).show()
+        var toast = Toast.makeText(activity,"Computer Wins",Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER,0,0)
+        toast.show()
     }
 
     private fun setPlayerImage(i: Int) {

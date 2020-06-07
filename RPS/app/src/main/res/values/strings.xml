@@ -7,7 +7,7 @@
     <string name="computer">Computer</string>
     <string name="player">Player</string>
     <string name="computerselect">Computer Select</string>
-    <string name="playerselect">U Select</string>
+    <string name="playerselect">You Select</string>
     <string name="title_text">Rock Paper Scissors!</string>
     <string name="play_button">Play</string>
     <string name="get_ready">Get ready For</string>
